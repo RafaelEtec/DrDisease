@@ -1,0 +1,15 @@
+|----------------------------------------( Dr. Disease )----------------------------------------|
+| Escolha o primeiro País a ser infectado: 
+| <0> Brasil 
+| <1> Argentina 
+| <2> Uruguai 
+| <3> Paraguai 
+| <4> Bolívia 
+| <5> Peru 
+| <6> Chile 
+| <7> Colômbia 
+| <8> Equador 
+| <9> Venezuela 
+| <10> Guiana 
+| <11> Suriname 
+

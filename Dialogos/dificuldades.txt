@@ -1,0 +1,5 @@
+|----------------------------------------( Dr. Disease )----------------------------------------|
+| Escolha a dificuldade: 
+| <0> Fácil   - Não há Cura 
+| <1> Normal  - Há Cura 
+| <2> Difícil - A Cura evolui mais rápido

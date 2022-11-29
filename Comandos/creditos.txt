@@ -1,0 +1,10 @@
+|----------------------------------------( Dr. Disease )----------------------------------------|
+| Este jogo foi Pensado e Desenvolvido por: 
+| Rafael Ferreira Goulart
+| Samuel José da Costa
+| Pedro Henrique Fogaça do Nascimento
+| Vinícius de Souza Oliveira
+| Matheus Garcia Manoel
+
+| Proposto pelo Professor Fernando Fernandes
+| Responsável pela matéria do Projeto Integrador: Desenvolvimento de Lógica

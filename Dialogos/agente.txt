@@ -1,0 +1,7 @@
+|----------------------------------------( Dr. Disease )----------------------------------------|
+| Agora escolha o agente Infeccioso: 
+| <0> Vírus ~ +4 Infecciosidade ~ +2 Mortalidade
+| <1> Bactéria ~ +3 Tempo de Vida ~ +3 Resistência à vacina
+| <2> Fungo ~ +2 Resistência ao Frio ~ +2 Resistência ao Calor
+| <3> Arma Biológica ~ +2 Infecciosidade ~ +4 Mortalidade
+
