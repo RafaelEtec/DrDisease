@@ -11,10 +11,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Random;
 import java.util.Scanner;
-
-/**
+import java.util.UUID;
+/** 
  * por: 
- *  Rafael Ferreira Goulart
+ *  Rafael Ferreira Goulart https://github.com/RafaelEtec
  *  Samuel José da Costa
  *  Pedro Henrique Fogaça do Nascimento
  *  Vinícius de Souza Oliveira
@@ -22,32 +22,31 @@ import java.util.Scanner;
  */
 public class DrDisease {
 
-    // Declarando variáveis Globais
     public static Scanner ent = new Scanner(System.in);
-    public static String strCaminho, strPartida, respostaP1, respostaP2, strNomeJogador, strNomeDoenca, entComando, strEntPais, strSeuPais, strAgenteInf, strDificuldade;
+    public static String strCaminho, strPartida, respostaP1, respostaP2, strNomeJogador, strNomeDoenca, entComando, strEntPais, strSeuPais,
+            strAgenteInf, strDificuldade;
     public static String strTituloDD = "|----------------------------------------( Dr. Disease )----------------------------------------|",
             strComando = "\n| Informe o comando:                                                                            |";
     public static boolean boolJogando = true, boolTutorial = true;
-    public static int podeAtacar = 10, guardaMsg, guardaLabMsg, contaminados = 0, cura = 0, mortos = 0, entPais, populacaoPais, entAgenteInf, jogadas = 0, dificuldade, nivelDoenca = 0, paisFrio, paisCalor;
+    public static int podeAtacar = 10, guardaMsg, guardaLabMsg, contaminados = 0, cura = 0, mortos = 0, entPais, populacaoPais, entAgenteInf,
+            jogadas = 0, dificuldade, nivelDoenca = 0, paisFrio, paisCalor;
     public static double porcentagemCura = 0;
     public static int[] habilidades = {0, 0, 0, 0, 0, 0, 0};
     public static int[] habPais = {0, 0};
-    public static String[] strHabilidades = {"Resistência ao Frio", "Resistência ao Calor", "Infecciosidade", "Mortalidade", "Força de Propagação", "Evolução Rápida", "Resistência à vacina"};
-    public static String[] strHabInfo = {"Torna sua doença mais resistente ao Frio", "Torna sua doença mais resistente ao Calor", "Aumenta a probabilidade de Infectar mais pessoas", "Aumenta a probabilidade de Matar mais pessoas", "O número mínimo de infectados é maior", "Torna o número necessário de contaminado menor para Evolução", "Dificulda o progresso da Cura"};
-    public static String filePartida = "./Historico/", fileCreditos = "./Comandos/creditos.txt", fileAgente = "./Dialogos/agente.txt", filePaises = "./Dialogos/paises.txt", fileDificuldades = "./Dialogos/dificuldades.txt", fileComandos = "./Comandos/comandos.txt", fileOpcao1p1 = "./Dialogos/opcao1p1.txt", fileOpcao2p1 = "./Dialogos/opcao2p1.txt", fileHistoria1 = "./Dialogos/historia1.txt", fileRespondeP1 = "./Dialogos/respondeP1.txt", fileRespondeP2 = "./Dialogos/respondeP2.txt", fileOpcao1p2 = "./Dialogos/opcao1p2.txt", fileOpcao2p2 = "./Dialogos/opcao2p2.txt";
+    public static String[] strHabilidades = {"Resistência ao Frio", "Resistência ao Calor", "Infecciosidade", "Mortalidade", "Força de Propagação",
+        "Evolução Rápida", "Resistência à vacina"};
+    public static String[] strHabInfo = {"Torna sua doença mais resistente ao Frio", "Torna sua doença mais resistente ao Calor",
+        "Aumenta a probabilidade de Infectar mais pessoas", "Aumenta a probabilidade de Matar mais pessoas", "O número mínimo de infectados é maior",
+        "Torna o número necessário de contaminado menor para Evolução", "Dificulda o progresso da Cura"};
+    public static String filePartida = "./Historico/", fileCreditos = "./Comandos/creditos.txt", fileAgente = "./Dialogos/agente.txt",
+            filePaises = "./Dialogos/paises.txt", fileDificuldades = "./Dialogos/dificuldades.txt", fileComandos = "./Comandos/comandos.txt",
+            fileOpcao1p1 = "./Dialogos/opcao1p1.txt", fileOpcao2p1 = "./Dialogos/opcao2p1.txt", fileHistoria1 = "./Dialogos/historia1.txt",
+            fileRespondeP1 = "./Dialogos/respondeP1.txt", fileRespondeP2 = "./Dialogos/respondeP2.txt", fileOpcao1p2 = "./Dialogos/opcao1p2.txt",
+            fileOpcao2p2 = "./Dialogos/opcao2p2.txt";
     public static Ranking partidaAtual = new Ranking();
+    public static UUID ID = UUID.randomUUID();
     
-    // Res frio - 0
-    // Res calor - 1
-    // Infecciosidade - 2
-    // Mortalidade - 3
-    // Força de propagação - 4
-    // Evolução mais rápida - 5
-    // resistência à vacina - 6
-    // 
-    // Fácil (Sem cura) --- Normal (Tem cura) --- Difícil (A cura evolui mais rápido)
     public static void main(String[] args) throws IOException {
-        
         confereDiretorios();
         confereArquivos();
         
@@ -64,7 +63,6 @@ public class DrDisease {
         salvaHabilidades(14);
 
         entAgenteInf = agenteInfeccioso();
-
         boolTutorial = false;
         System.out.println(strTituloDD);
         leituraArquivo(fileComandos);
@@ -91,8 +89,8 @@ public class DrDisease {
     }
     
     public static void salvaPartida() throws IOException {
-        strPartida = filePartida + strNomeJogador + "_" + strNomeDoenca + ".txt";
-        strCaminho = strNomeJogador + "_" + strNomeDoenca + ".txt";
+        strPartida = filePartida + strNomeJogador + "_" + strNomeDoenca + "_" + ID + ".txt";
+        strCaminho = strNomeJogador + "_" + strNomeDoenca + "_" + ID + ".txt";
         Path partida = Path.of(strPartida);
         Files.deleteIfExists(Path.of("./Historico").resolve(strCaminho));
         boolean exists = Files.exists(partida);
@@ -102,12 +100,13 @@ public class DrDisease {
             Files.writeString(partida, strTituloDD
                 + "\n| Jogador: " + partidaAtual.getJogador()
                 + "\n| Doença: " + partidaAtual.getDoenca()
-                + "\n| " + partidaAtual.getDificuldade()
+                + "\n| Dificuldade: " + partidaAtual.getDificuldade()
                 + "\n|-----------------------------------------------------------------------------------------------|"
                 + "\n| País: " + partidaAtual.getPais()
                 + "\n| Agente Infeccioso: " + partidaAtual.getAgente()
                 + "\n| Jogadas: " + partidaAtual.getJogadas()
                 + "\n| Infectados: " + partidaAtual.getInfectados()
+                + "\n| Cura: " + partidaAtual.getCura()
                 + "\n|-----------------------------------------------------------------------------------------------|"
                 + "\n| Resistência ao Frio: " + partidaAtual.getHabilidades()[0]
                 + "\n| Resistência ao Calor: " + partidaAtual.getHabilidades()[1]

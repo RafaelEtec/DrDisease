@@ -1,5 +1,7 @@
 package goulart.rafael.drdisease;
 
+// https://github.com/RafaelEtec/DrDisease
+
 public class Ranking {
     public String jogador;
     public String doenca;

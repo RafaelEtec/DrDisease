@@ -1,0 +1,19 @@
+|----------------------------------------( Dr. Disease )----------------------------------------|
+| Jogador: Jul
+| Doença: rafsggsa
+| Dificuldade: Normal
+|-----------------------------------------------------------------------------------------------|
+| País: Colômbia
+| Agente Infeccioso: Vírus
+| Jogadas: 2
+| Infectados: 1131
+| Cura: 0
+|-----------------------------------------------------------------------------------------------|
+| Resistência ao Frio: 2
+| Resistência ao Calor: 2
+| Infecciosidade: 6
+| Mortalidade: 4
+| Força de Propagação: 2
+| Evolução mais Rápida: 2
+| Resistência à Vacina: 2
+|-----------------------------------------------------------------------------------------------|
