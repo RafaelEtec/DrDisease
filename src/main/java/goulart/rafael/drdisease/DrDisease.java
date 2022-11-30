@@ -363,6 +363,10 @@ public class DrDisease {
             }
             boolJogando = false;
             leituraArquivo(fileCreditos);
+        } else if (cura == 100) {
+            System.out.println("| A cura alcançou 100% de progressão! é inútil continuar a jornada.                            |"
+                    +          "|                                          Game Over!                                          |");
+            boolJogando = false;
         }
 
         return boolJogando;
@@ -427,7 +431,6 @@ public class DrDisease {
     }
 
     public static int armazenaPais() throws IOException {
-        
         do {
             if (entPais < 0 || entPais > 11) {
                 System.out.println("| Atenção! Insira novamente:");

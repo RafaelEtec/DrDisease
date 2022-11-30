@@ -1,18 +1,19 @@
 |----------------------------------------( Dr. Disease )----------------------------------------|
-| Jogador: Rafael
-| Doença: rasgsga
-| Normal
+| Jogador: Juan
+| Doença: Corona
+| Dificuldade: Normal
 |-----------------------------------------------------------------------------------------------|
-| País: Uruguai
-| Agente Infeccioso: Fungo
-| Jogadas: 4
-| Infectados: 1891
+| País: Peru
+| Agente Infeccioso: Bactéria
+| Jogadas: 6
+| Infectados: 2964
+| Cura: 0
 |-----------------------------------------------------------------------------------------------|
-| Resistência ao Frio: 4
-| Resistência ao Calor: 4
+| Resistência ao Frio: 2
+| Resistência ao Calor: 2
 | Infecciosidade: 2
 | Mortalidade: 2
 | Força de Propagação: 2
-| Evolução mais Rápida: 2
-| Resistência à Vacina: 2
+| Evolução mais Rápida: 5
+| Resistência à Vacina: 5
 |-----------------------------------------------------------------------------------------------|

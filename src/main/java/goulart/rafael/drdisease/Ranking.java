@@ -17,7 +17,9 @@ public class Ranking {
         
     }
 
-    public Ranking(String jogador, String doenca, String pais, String dificuldade, String agente, int jogadas, int cura, int infectados, int[] habilidades) {
+    public Ranking(String jogador, String doenca, String pais, String dificuldade, String agente,
+            int jogadas, int cura, int infectados,
+            int[] habilidades) {
         this.jogador = jogador;
         this.doenca = doenca;
         this.pais = pais;

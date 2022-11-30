@@ -1,18 +1,19 @@
 |----------------------------------------( Dr. Disease )----------------------------------------|
-| Jogador: Raasd
-| Doença: kilsa
-| Normal
+| Jogador: Zed
+| Doença: catapora
+| Dificuldade: Difícil
 |-----------------------------------------------------------------------------------------------|
-| País: Argentina
-| Agente Infeccioso: Vírus
-| Jogadas: 0
-| Infectados: 0
+| País: Venezuela
+| Agente Infeccioso: Arma Biológica
+| Jogadas: 5
+| Infectados: 2624
+| Cura: 6
 |-----------------------------------------------------------------------------------------------|
 | Resistência ao Frio: 2
 | Resistência ao Calor: 2
-| Infecciosidade: 6
+| Infecciosidade: 4
 | Mortalidade: 6
-| Força de Propagação: 0
+| Força de Propagação: 2
 | Evolução mais Rápida: 2
 | Resistência à Vacina: 2
 |-----------------------------------------------------------------------------------------------|

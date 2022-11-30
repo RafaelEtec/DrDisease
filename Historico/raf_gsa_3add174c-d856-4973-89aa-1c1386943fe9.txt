@@ -1,0 +1,19 @@
+|----------------------------------------( Dr. Disease )----------------------------------------|
+| Jogador: raf
+| Doença: gsa
+| Dificuldade: Difícil
+|-----------------------------------------------------------------------------------------------|
+| País: Uruguai
+| Agente Infeccioso: Fungo
+| Jogadas: 0
+| Infectados: 0
+| Cura: 2
+|-----------------------------------------------------------------------------------------------|
+| Resistência ao Frio: 4
+| Resistência ao Calor: 4
+| Infecciosidade: 2
+| Mortalidade: 2
+| Força de Propagação: 2
+| Evolução mais Rápida: 2
+| Resistência à Vacina: 2
+|-----------------------------------------------------------------------------------------------|

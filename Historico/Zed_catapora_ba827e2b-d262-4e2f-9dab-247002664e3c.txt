@@ -1,17 +1,19 @@
 |----------------------------------------( Dr. Disease )----------------------------------------|
-| Jogador: Rafael
-| Doença: Julsa
-| Difícil
+| Jogador: Zed
+| Doença: catapora
+| Dificuldade: Difícil
 |-----------------------------------------------------------------------------------------------|
-| País: Chile
+| País: Venezuela
 | Agente Infeccioso: Arma Biológica
-| Jogadas: 0
-| Infectados: 0
+
+| Jogadas: 3
+| Infectados: 3580
+| Cura: 6
 |-----------------------------------------------------------------------------------------------|
 | Resistência ao Frio: 2
 | Resistência ao Calor: 2
-| Infecciosidade: 5
-| Mortalidade: 5
+| Infecciosidade: 4
+| Mortalidade: 6
 | Força de Propagação: 2
 | Evolução mais Rápida: 2
 | Resistência à Vacina: 2
